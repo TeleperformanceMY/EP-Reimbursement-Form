@@ -1,0 +1,47 @@
+{
+  "employeeInfo": {
+    "company": "Acme Corporation",
+    "employeeName": "John Doe",
+    "department": "Engineering",
+    "bms": 2024001
+  },
+  "expenses": [
+    {
+      "date": "2024-03-15T00:00:00.000Z",
+      "particulars": "Flight ticket to Manila",
+      "refNo": "REF-001",
+      "currency": "USD",
+      "sourceAmount": "500",
+      "reimbursementType": "eVisa"
+    },
+    {
+      "date": "2024-03-17T00:00:00.000Z",
+      "particulars": "Medical examination",
+      "refNo": "REF-002",
+      "currency": "PHP",
+      "sourceAmount": "2500",
+      "reimbursementType": "medicalCheckup"
+    },
+    {
+      "date": "2024-03-18T00:00:00.000Z",
+      "particulars": "CTC Processing",
+      "refNo": "REF-003",
+      "currency": "PHP",
+      "sourceAmount": "1000",
+      "reimbursementType": "ctcFees"
+    }
+  ],
+  "attachments": [
+    {
+      "filename": "receipt_flight.pdf",
+      "filetype": "pdf",
+      "base64Content": "JVBERi0xLjQKJcOkw7zDtsOfCj..."
+    },
+    {
+      "filename": "medical_invoice.xlsx",
+      "filetype": "xlsx",
+      "base64Content": "UEsDBBQAAAAIAHWBVVkAAAA..."
+    }
+  ],
+  "submittedAt": "2024-03-20T10:30:00.000Z"
+}
