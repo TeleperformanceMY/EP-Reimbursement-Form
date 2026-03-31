@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useI18n } from '@/lib/i18n/context'
 import type { EmployeeInfo, ExpenseRow, AttachmentRow, ExpenseFormPayload } from '@/lib/types/expense-form'
 import { Button } from '@/components/ui/button'
@@ -104,12 +105,18 @@ export function ExpenseForm() {
     <div className="min-h-screen bg-background">
       <div className="container max-w-4xl mx-auto py-8 px-4">
         {/* Header */}
-        <div className="flex items-start justify-between mb-8">
-          <div className="flex items-center gap-3">
-            <div className="size-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">E</span>
-            </div>
-            <h1 className="text-2xl font-bold text-balance">{t('formTitle')}</h1>
+        <div className="flex items-center justify-between mb-8">
+          <Image 
+            src="/TPLogo11.png" 
+            alt="Teleperformance Logo" 
+            width={70} 
+            height={80} 
+            className="rounded-md"
+            loading="eager"
+            priority
+          />
+          <div className="flex-1 text-center mx-4">
+            <h1 className="text-2xl font-bold">{t('formTitle')}</h1>
           </div>
           <LanguageSwitcher />
         </div>
